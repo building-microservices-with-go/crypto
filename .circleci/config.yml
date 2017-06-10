@@ -4,3 +4,7 @@ jobs:
     docker:
       # CircleCI Go images available at: https://hub.docker.com/r/circleci/golang/
       - image: circleci/golang:1.8
+
+    steps:
+      - checkout
+      - run: go build utils.go
