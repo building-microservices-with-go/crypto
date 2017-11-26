@@ -15,7 +15,7 @@ const (
 	// BlockPublicKey contains the value which defines a Public Key in a PEM block
 	BlockPublicKey = "PUBLIC KEY"
 	// BlockPrivateKey contains the vlaue which defines a PrivateKey in a PEM block
-	BlockPrivateKey = "PRIVATE KEY"
+	BlockPrivateKey = "RSA PRIVATE KEY"
 )
 
 // UnmarshalRSAPublicKeyFromFile reads the given file and returns a PublicKey
