@@ -64,7 +64,7 @@ func readFileToBlock(file string, blockType string) (*pem.Block, error) {
 	}
 
 	block, _ := pem.Decode(bytes)
-	if block == nil && block.Type != blockType {
+	if block == nil || block.Type != blockType {
 		return nil, fmt.Errorf("Unable to decode public key")
 	}
 
